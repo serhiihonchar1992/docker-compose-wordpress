@@ -18,16 +18,16 @@ If you want to connect to a database using your IDE, DataGrip, or other tools,
 You need to expose the ports of the base outside
 
 ```yaml
-  mysql:
-    image: mysql:8.0
-    volumes:
-      - ./mysql_data:/var/lib/mysql
-    restart: always
-    ports:
-      - 3006:3306
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: wordpress
-      MYSQL_PASSWORD: wordpress
+mysql:
+image: mysql:8.0
+volumes:
+  - ./mysql_data:/var/lib/mysql
+restart: always
+ports:
+  - 3006:3306
+environment:
+  MYSQL_ROOT_PASSWORD: root
+  MYSQL_DATABASE: wordpress
+  MYSQL_USER: wordpress
+  MYSQL_PASSWORD: wordpress
 ```
