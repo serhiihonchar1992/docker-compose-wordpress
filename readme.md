@@ -15,7 +15,7 @@ docker compose up
 ```
 
 If you want to connect to a database using your IDE, DataGrip, or other tools,
-You need to expose the ports of the base outside
+You need to expose the ports of the database outside
 
 ```yaml
 mysql:

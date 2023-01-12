@@ -37,6 +37,3 @@ services:
       WORDPRESS_DB_NAME: wordpress
     volumes:
       - ./wordpress:/var/www/html
-
-volumes:
-  mysql_data: { }
